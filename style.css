@@ -109,6 +109,8 @@ nav{
 .blg-img img{
   width: 600px;
   height: 300px;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
 .blg-text{
   font-size: 23px;
@@ -154,8 +156,18 @@ nav{
 .logo-box img{
   width: 35px;
   height: 35px;
-}
 
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .footer-box2{
 
   width: 400px;
